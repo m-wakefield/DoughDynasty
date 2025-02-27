@@ -1,0 +1,24 @@
+/* Additional Pizza-Themed Styles */
+body {
+    background-color: var(--bs-danger) !important; /* Uses Bootstrap warning color */
+}
+
+.navbar {
+    background-color: var(--bs-danger) !important; /* Uses Bootstrap danger color */
+}
+
+h2 {
+    color: var(--bs-danger) !important; /* Makes headings red */
+}
+
+/* Customize buttons */
+.btn-danger {
+    background-color: var(--bs-danger) !important;
+    border-color: var(--bs-dark) !important;
+}
+
+.btn-danger:hover {
+    background-color: var(--bs-dark) !important;
+    border-color: var(--bs-warning) !important;
+}
+
