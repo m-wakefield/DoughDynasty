@@ -13,4 +13,11 @@ As a user,
 - Thw main content on the home page is the spcials and links to other menu items. 
 
 
+# Enhancements Criteria: (Future)
+
+- Add a login screen for returning users to get the best deals.
+- Add a tracking function to see where the progress of the order.
+- Add a carousel of menu items or specials. 
+
+
 
