@@ -9,7 +9,7 @@ As a user,
 # Acceptance Criteria:
 
 - The home page features an order now button which is for either carry out or delivery. 
-- The navigation bar will include links to Home, Menu, Deals, Track Order, Location, About Us, and Contact Information. 
+- The navigation bar will include links to Home, Menu, Deals, Cart, Location, About Us, and Contact Information. 
 - The main content on the home page is the specials and links to other menu items. 
 
 # Enhancements Criteria: (Future)
