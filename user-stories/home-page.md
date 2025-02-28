@@ -17,7 +17,7 @@ As a user,
 
 - Add a login screen for returning users to get the best deals.
 - Add a tracking function to see where the progress of the order.
-- Add a carousel of menu items or specials. 
+- Add "Increase/Decrease Quantity" & "Remove Item" options.
 
 
 
