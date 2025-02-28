@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="bg-warning">
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
         <div class="container">
@@ -17,20 +18,19 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#deals">Deals</a></li>
                     <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="#cart">Cart</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="bg-danger text-white text-center py-5" id="home">
+    <header class="bg-danger text-white text-center py-5">
         <h1>Welcome to Dough Dynasty</h1>
         <p>Delicious pizzas delivered to your doorstep!</p>
         <a href="#menu" class="btn btn-light">Order Now</a>
@@ -60,7 +60,6 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <a href="#home" class="btn btn-secondary mt-3">Back to Home Page</a>
     </section>
 
     <!-- Menu Section -->
@@ -88,49 +87,7 @@
                 <button id="add-to-cart-brownies" class="btn btn-primary">Add to Cart</button>
             </div>
         </div>
-        <a href="#home" class="btn btn-secondary mt-3">Back to Home Page</a>
     </section>
-
-    <!-- Location Section -->
-    <section id="location" class="container my-5 text-center">
-        <h2>Our Location</h2>
-        <p>123 Pizza Street, Food City, FC 45678</p>
-        <p>Find us on Google Maps!</p>
-        <img src="images/location_1.jpg" class="img-fluid mt-3 location-img" alt="Location Image">
-        <a href="#home" class="btn btn-secondary mt-3">Back to Home Page</a>
-    </section>
-
-    <!-- About Us Section -->
-    <section id="about" class="bg-light py-5 text-center">
-        <h2>About Us</h2>
-        <p>Dough Dynasty has been serving the best pizzas since 1995. Our mission is to provide high-quality ingredients and exceptional customer service.</p>
-        <a href="#home" class="btn btn-secondary mt-3">Back to Home Page</a>
-    </section>
-
-    <!-- Contact Section -->
-    <div class="container mt-5" id="contact">
-        <h2 class="text-center">Contact Us</h2>
-        <form action="https://formspree.io/f/xzzdvarq" method="POST">
-            <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" name="name" required>
-            </div>
-            <div class="mb-3">
-                <label for="phone" class="form-label">Phone</label>
-                <input type="text" class="form-control" id="phone" name="Phone" required>
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send</button>
-        </form>
-        <a href="#home" class="btn btn-secondary mt-3">Back to Home Page</a>
-    </div>
 
     <!-- Cart Section -->
     <section id="cart" class="container my-5">
@@ -139,7 +96,6 @@
             <p>Your cart is empty.</p>
         </div>
         <button id="checkout" class="btn btn-primary mt-3">Checkout</button>
-        <a href="#home" class="btn btn-secondary mt-3">Back to Home Page</a>
     </section>
 
     <!-- Footer -->
@@ -149,20 +105,17 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Array to hold cart items
         let cart = [];
 
-        // Function to handle adding items to the cart
         function addToCart(item) {
             cart.push(item);
             alert(item + " has been added to your cart!");
             updateCartDisplay();
         }
 
-        // Function to update the cart display
         function updateCartDisplay() {
             const cartItemsDiv = document.getElementById("cart-items");
-            cartItemsDiv.innerHTML = ""; // Clear current cart display
+            cartItemsDiv.innerHTML = "";
 
             if (cart.length === 0) {
                 cartItemsDiv.innerHTML = "<p>Your cart is empty.</p>";
@@ -177,7 +130,6 @@
             }
         }
 
-        // Add event listeners to the buttons
         document.getElementById("add-to-cart-pizza").addEventListener("click", function() {
             addToCart("Classic Pizza");
         });
@@ -194,11 +146,10 @@
             addToCart("Extras");
         });
 
-        // Add event listener to the checkout button
         document.getElementById("checkout").addEventListener("click", function() {
             alert("Proceeding to checkout with items: " + cart.join(", "));
-            // Here you can add code to handle the checkout process
         });
     </script>
+
 </body>
 </html>
